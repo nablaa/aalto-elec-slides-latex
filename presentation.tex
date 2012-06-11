@@ -1,0 +1,74 @@
+\documentclass[first=dgreen,second=purple,logo=redquo]{aaltoslides}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage[style=english]{csquotes}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathmorphing,decorations.markings}
+\usetikzlibrary{shapes}
+\usetikzlibrary{patterns}
+
+
+\title{Some title}
+
+\author{John Doe}
+\date{01.01.2012}
+\institute{Aalto University}
+
+\aaltofootertext{}{}{\arabic{page}/\pageref{LastPage}\ }
+\begin{document}
+\aaltotitleframe
+
+\begin{frame}{Introduction}
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Lorem ipsum
+			\item Morbi magna purus, vestibulum in egestas at, posuere vel elit.
+			\begin{itemize}
+				\item Pellentesque pharetra
+				\item Quisque euismod
+				\item \ldots
+			\end{itemize}
+		\end{itemize}
+		\column{0.5\textwidth}
+		\resizebox{\linewidth}{!}{\input{images/test1.tex}}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}{Donec et dui mauris}
+	\begin{itemize}
+		\item Vivamus ut orci sapien
+		\item Sed ac enim ac diam
+		\item Maecenas ut tellus
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem}
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Vivamus ut orci sapien
+			\item Sed ac enim ac diam
+			\item Maecenas ut tellus
+		\end{itemize}
+		\column{0.5\textwidth}
+		\resizebox{\linewidth}{!}{\input{images/test2.tex}}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Questions, comments}
+\begin{center}
+	\fontsize{80}{80}\selectfont ?
+\end{center}
+\end{frame}
+
+\end{document}
+
